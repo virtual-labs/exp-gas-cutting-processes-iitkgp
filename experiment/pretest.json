@@ -2,38 +2,115 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Frequently used fuel gas in oxy-fuel welding is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Acetylene",
+        "b": "Biogas",
+        "c": "Coal gas",
+        "d": "Both (a) and (b) "
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which of the following flame types has more oxygen than acetylene?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Balanced flame",
+        "b": "Oxygen-rich flame",
+        "c": "Carbon-rich flame",
+        "d": "None"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+  {
+      "question": "How many different kinds of flames are used in gas welding?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+{
+      "question": "Which of the following flames is used to weld brass??",
+      "answers": {
+        "a": "Oxygen-rich flame",
+        "b": "Carbon-rich flame",
+        "c": "Balanced flame",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which gas cylinder has a permeable interior?",
+      "answers": {
+        "a": "Acetylene Cylinder",
+        "b": "Oxygen Cylinder",
+        "c": "Both",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "In the Oxyacetylene welding assembly, the colour of the acetylene cylinder is",
+      "answers": {
+        "a": "Blue",
+        "b": "Black",
+        "c": "Maroon",
+        "d": "None of the above"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which of the following flames has three zones?",
+      "answers": {
+        "a": "Balanced flame",
+        "b": "Carbon-rich flame",
+        "c": "Oxygen-rich flame",
+        "d": "None of the above"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+{
+      "question": "For joining and cutting, a neutral flame is used in",
+      "answers": {
+        "a": "All ferrous materials",
+        "b": "All nonferrous materials",
+        "c": "Both (a) and (b)",
+        "d": "Brass"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Disadvantage of oxyacetylene welding is",
+      "answers": {
+        "a": "Costly and extremely unstable ",
+        "b": "Easy to handle",
+        "c": "the maximum temperature is produced ",
+        "d": "None"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "What is the colour of the oxygen cylinder in the Oxyacetylene assembly?",
+      "answers": {
+        "a": "Green",
+        "b": "Black",
+        "c": "Red",
+        "d": "White"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
-  ]
+]
 }
