@@ -2,38 +2,119 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Gas used for underwater welding is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Acetylene",
+        "b": "Gasoline",
+        "c": "Hydrogen",
+        "d": "None"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Acetylene's chemical formula is",
+      "answers": {
+        "a": "C<sub>2</sub>H<sub>2</sub>",
+        "b": "C<sub>4</sub>H<sub>4</sub>",
+        "c": "C<sub>2</sub>H<sub>6</sub>",
+        "d": "C<sub>2</sub>H<sub>5</sub>OH"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+{
+      "question": "What kind of reaction takes place during oxyacetylene cutting?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Endothermic",
+        "b": "Exothermic",
+        "c": "None",
+        "d": "Both (a) and (b)"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which one of the following gases is complicated to store?",
+      "answers": {
+        "a": "Oxygen",
+        "b": "Acetylene",
+        "c": "Both (a) and (b)",
+        "d": "None"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which part of an oxy-acetylene flame has the highest temperature?",
+      "answers": {
+        "a": "Innermost cone",
+        "b": "Outer cone",
+        "c": "Intermediate cone",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Stream of oxygen jet is required in",
+      "answers": {
+        "a": "Gas cutting",
+        "b": "Gas welding",
+        "c": "Brazing",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Oxygen-rich flame is used to join",
+      "answers":{ 
+        "a": "Carbon steels",
+        "b": "Copper alloys-brass,bronze",
+        "c": "Both (a) and (b)",
+        "d": "None of theabove"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+{
+      "question": "The ratio of Acetylene to Oxygen, when neutral flame created is",
+      "answers":{ 
+        "a": "2:1",
+        "b": "1:2",
+        "c": "1:1",
+        "d": "3:1"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+{
+      "question": "Central aperture diameter of gas cutting torch varies with",
+      "answers":{ 
+        "a": "Thickness of material",
+        "b": "Type of material",
+        "c": "Both (a) & (b)",
+        "d": "None"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Acetylene gas is stored in the cylinder by mixing with",
+      "answers":{ 
+        "a": "Alcohol",
+        "b": "Acetone",
+        "c": "Acetic acid",
+        "d": "Folic acid"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
-  ]
+]
 }
+
+
+
+
+
