@@ -164,6 +164,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Acetylene gas cylinder requires special precautions due to",
+      "answers": {
+        "a": "High Pressure",
+        "b": "Flammability",
+        "c": "Toxicity",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements are incorrect about oxyacetylene cutting?",
+      "answers": {
+        "a": "It uses an oxidizing flame to melt and burn through the metal",
+        "b": "An additional oxygen jet is used after preheating the flame.",
+        "c": "It can be used to cut various metals including steel and stainless steel.",
+        "d": "Proper ventilation is important to avoid inhaling harmful fumes."
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which metal is not generally considered suitable for oxyacetylene cuting?",
+      "answers": {
+        "a": "Low carbon steel",
+        "b": "high carbon steel",
+        "c": "Cast iron",
+        "d": "stainless steel"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
     }
 ]
 }
