@@ -171,6 +171,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "A carburizing flame is suitable for welding",
+      "answers": {
+        "a": "Mild steel",
+        "b": "high carbon steel",
+        "c": "stainless steel",
+        "d": "Cast iron"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The hottest part of the oxyacetylene flame is located in the",
+      "answers": {
+        "a": "Outer cone",
+        "b": "Inner cone",
+        "c": "Mixing zone",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "An oxidizing flame is suitable for welding",
+      "answers": {
+        "a": "Low carbon steel",
+        "b": "high carbon steel",
+        "c": "Aluminium",
+        "d": "Copper"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
 ]
 }
