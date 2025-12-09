@@ -9,6 +9,12 @@
         "c": "Hydrogen",
         "d": "None"
       },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
@@ -19,6 +25,12 @@
         "b": "C<sub>4</sub>H<sub>4</sub>",
         "c": "C<sub>2</sub>H<sub>6</sub>",
         "d": "C<sub>2</sub>H<sub>5</sub>OH"
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -42,6 +54,12 @@
         "c": "Both (a) and (b)",
         "d": "None"
       },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
       "correctAnswer": "b",
       "difficulty": "beginner"
     },
@@ -52,6 +70,12 @@
         "b": "Outer cone",
         "c": "Intermediate cone",
         "d": "None of the above"
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -64,6 +88,12 @@
         "c": "Brazing",
         "d": "None of the above"
       },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
+      },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
@@ -74,6 +104,12 @@
         "b": "Copper alloys-brass,bronze",
         "c": "Both (a) and (b)",
         "d": "None of theabove"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -86,6 +122,12 @@
         "c": "1:1",
         "d": "3:1"
       },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
       "correctAnswer": "c",
       "difficulty": "beginner"
     },
@@ -96,6 +138,12 @@
         "b": "Type of material",
         "c": "Both (a) & (b)",
         "d": "None"
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
@@ -108,7 +156,64 @@
         "c": "Acetic acid",
         "d": "Folic acid"
       },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
       "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Acetylene gas cylinder requires special precautions due to",
+      "answers": {
+        "a": "High Pressure",
+        "b": "Flammability",
+        "c": "Toxicity",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following statements are incorrect about oxyacetylene cutting?",
+      "answers": {
+        "a": "It uses an oxidizing flame to melt and burn through the metal",
+        "b": "An additional oxygen jet is used after preheating the flame.",
+        "c": "It can be used to cut various metals including steel and stainless steel.",
+        "d": "Proper ventilation is important to avoid inhaling harmful fumes."
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which metal is not generally considered suitable for oxyacetylene cuting?",
+      "answers": {
+        "a": "Low carbon steel",
+        "b": "high carbon steel",
+        "c": "Cast iron",
+        "d": "stainless steel"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
 ]
