@@ -175,6 +175,169 @@ scn.add( fill );
 
 const ctr = new OrbitControls(cam, cnvs);
 
+
+
+const lstnr = new THREE.AudioListener();
+cam.add(lstnr);
+const aud = new THREE.Audio(lstnr);
+const adldr = new THREE.AudioLoader();
+adldr.load('./images/Wldsd.mp3', (buffer) => {
+    aud.setBuffer(buffer);
+});
+
+
+const adit = () => {
+            aud.playbackRate = 2.0;
+                aud.play();
+                setTimeout(() => {
+                    aud.stop();
+                }, 100);
+        };
+function lblupd(objprt,sprt,arw,upof){
+    if (!objprt || !sprt || !arw) return;
+        const lblps = objprt.position.clone().add(upof);
+        sprt.position.copy(lblps);
+        arw.position.copy(lblps);
+}
+
+let actLabelSprite = null;
+let actArrow = null;
+
+function crtlbl(text,fnt) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 512;
+    canvas.height = 128;
+    const ctx = canvas.getContext('2d');
+
+    ctx.font =  fnt+'px Arial';
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+
+    const tex = new THREE.CanvasTexture(canvas);
+    tex.needsUpdate = true;
+    return tex;
+}
+
+function crtar(objprt,objnm) {
+    if (!objprt) return;
+    const nameText = objnm;
+    const tex = crtlbl(nameText,23);
+    const mat = new THREE.SpriteMaterial({ map: tex, transparent: true });
+    actLabelSprite = new THREE.Sprite(mat);
+
+    const upOffset = new THREE.Vector3(0, (sizs.wd / sizs.ht) * 0.45, 0);
+    actLabelSprite.position.copy(objprt.position).add(upOffset);
+
+    const baseScale = (sizs.wd / sizs.ht) * 0.8;
+    actLabelSprite.scale.set(baseScale * 2.2, baseScale * 0.6, 1);
+
+    scn.add(actLabelSprite);
+
+    const dir = new THREE.Vector3().subVectors(objprt.position, actLabelSprite.position).normalize();
+    const length = actLabelSprite.position.distanceTo(objprt.position);
+    const headLength = (sizs.wd / sizs.ht) * 0.03;
+    const headWidth = (sizs.wd / sizs.ht) * 0.15;
+    actArrow = new THREE.ArrowHelper(dir, actLabelSprite.position.clone(), length, 0xffcc00, headLength, headWidth);
+    scn.add(actArrow);
+
+    return [actLabelSprite, actArrow];
+}
+
+
+let bslbl = null;
+
+const bsmtlbl = setInterval(() => {
+    if (!mldme) return;
+    if (bslbl) return;
+    const lbar=crtar(mldme,"Base material");
+    bslbl=lbar[0];
+    if (lbar[0] &&  lbar[1]) {
+        const upOffset = new THREE.Vector3(-1.0, (sizs.wd / sizs.ht) * 0.30, 0.25);
+        const labelPos = mldme.position.clone().add(upOffset);
+        lbar[0].position.copy(labelPos);
+        const dir = new THREE.Vector3().subVectors(mldme.position, labelPos).normalize();
+        const length = labelPos.distanceTo(mldme.position);
+        lbar[1].position.copy(labelPos);
+        //lbar[1].setDirection(dir);
+        lbar[1].setLength(length*0.35, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+    }
+}, 100);
+
+let ecblsprt = null;
+let ecblarw = null;
+let ecblof = null;
+
+const eclbl = setInterval(() => {
+    if (!trnme) return;
+    if (ecblsprt || ecblarw) {return;}
+    else
+    {const lbar=crtar(trnme,"Gas welding torch");
+    ecblsprt=lbar[0];
+    ecblarw=lbar[1];
+    if (lbar[0] &&  lbar[1]) {
+        let upOffset = new THREE.Vector3(-0.3, (sizs.wd / sizs.ht) * 0.45, 0.5);
+        ecblof=upOffset;
+        let labelPos = trnme.position.clone().add(upOffset);
+        lbar[0].position.copy(labelPos);
+        let dir = new THREE.Vector3(Math.PI/2*0,-Math.PI/2*1,0).normalize();
+        let length = labelPos.distanceTo(trnme.position);
+        lbar[1].position.copy(labelPos);
+        lbar[1].setDirection(dir);
+        lbar[1].setLength(length*0.58, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+    }}
+}, 10);
+
+
+let ocsprt = null;
+
+const ocbl = setInterval(() => {
+    if (!oxyme) return;
+    if (ocsprt) {return;}
+    else
+    {const lbar=crtar(oxyme,"Oxygen gas cylinder");
+    ocsprt=lbar[0];
+    if (lbar[0] &&  lbar[1]) {
+        let upOffset = new THREE.Vector3(0.85, (sizs.wd / sizs.ht) * 1.0, 0.1);
+        let labelPos = oxyme.position.clone().add(upOffset);
+        lbar[0].position.copy(labelPos);
+        let dir = new THREE.Vector3(Math.PI/2*-1, Math.PI/2*0, Math.PI/2*0).normalize();
+        let length = labelPos.distanceTo(oxyme.position);
+        lbar[1].position.copy(labelPos);
+        lbar[1].setDirection(dir);
+        lbar[1].setLength(length*0.26, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+    }}
+}, 10);
+
+let acsprt = null;
+
+const acbl = setInterval(() => {
+    if (!actme) return;
+    if (acsprt) {return;}
+    else
+    {const lbar=crtar(actme,"Acetylene gas cylinder");
+    acsprt=lbar[0];
+    if (lbar[0] &&  lbar[1]) {
+        let upOffset = new THREE.Vector3(-1.68, (sizs.wd / sizs.ht)*1.0, 0.1);
+        let labelPos = oxyme.position.clone().add(upOffset);
+        lbar[0].position.copy(labelPos);
+        let dir = new THREE.Vector3(Math.PI/2*1, Math.PI/2*0, Math.PI/2*0).normalize();
+        let length = labelPos.distanceTo(oxyme.position);
+        lbar[1].position.copy(labelPos);
+        lbar[1].setDirection(dir);
+        lbar[1].setLength(length*0.25, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+    }}
+}, 10);
+
+window.addEventListener('beforeunload', () => {
+    clearInterval(bsmtlbl);
+    clearInterval(eclbl);
+    clearInterval(ocbl);
+    clearInterval(acbl);
+});
+
+
 let i=0,j=0, adi=0, k=sizs.wd / sizs.ht*0.0011, m=sizs.wd / sizs.ht*0.0019;
 
 const loop = () => {
@@ -184,7 +347,8 @@ const loop = () => {
     
     if(i<= ((sizs.wd / sizs.ht)*0.525)){
     trnme.position.set(-sizs.wd / sizs.ht*0.60+k, sizs.wd / sizs.ht*0.48, -sizs.wd / sizs.ht*0.49-m);
- 
+        adit();
+ lblupd(trnme,ecblsprt,ecblarw,ecblof);
 let crvo = new THREE.CatmullRomCurve3( [
 	new THREE.Vector3( sizs.wd / sizs.ht*1.5, sizs.wd / sizs.ht*0.815, 0 ),
     new THREE.Vector3( sizs.wd / sizs.ht*1.25, sizs.wd / sizs.ht*0.815, 0 ),
