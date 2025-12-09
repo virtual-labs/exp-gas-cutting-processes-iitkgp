@@ -1,0 +1,227 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Frequently used fuel gas in oxy-fuel welding is",
+      "answers": {
+        "a": "Acetylene",
+        "b": "Biogas",
+        "c": "Coal gas",
+        "d": "Both (a) and (b) "
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following flame types has more oxygen than acetylene?",
+      "answers": {
+        "a": "Balanced flame",
+        "b": "Oxygen-rich flame",
+        "c": "Carbon-rich flame",
+        "d": "None"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+
+  {
+      "question": "How many different kinds of flames are used in gas welding?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "4"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which of the following flames is used to weld brass??",
+      "answers": {
+        "a": "Oxygen-rich flame",
+        "b": "Carbon-rich flame",
+        "c": "Balanced flame",
+        "d": "None of the above"
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which gas cylinder has a permeable interior?",
+      "answers": {
+        "a": "Acetylene Cylinder",
+        "b": "Oxygen Cylinder",
+        "c": "Both",
+        "d": "None of the above"
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "In the Oxyacetylene welding assembly, the colour of the acetylene cylinder is",
+      "answers": {
+        "a": "Blue",
+        "b": "Black",
+        "c": "Maroon",
+        "d": "None of the above"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Which of the following flames has three zones?",
+      "answers": {
+        "a": "Balanced flame",
+        "b": "Carbon-rich flame",
+        "c": "Oxygen-rich flame",
+        "d": "None of the above"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+{
+      "question": "For joining and cutting, a neutral flame is used in",
+      "answers": {
+        "a": "All ferrous materials",
+        "b": "All nonferrous materials",
+        "c": "Both (a) and (b)",
+        "d": "Brass"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"c\" is correct answer",
+        "b":"Your are Wrong, Option \"c\" is correct answer",
+        "c":"You are right",
+        "d":"Your are Wrong, Option \"c\" is correct answer"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+{
+      "question": "Disadvantage of oxyacetylene welding is",
+      "answers": {
+        "a": "Costly and extremely unstable ",
+        "b": "Easy to handle",
+        "c": "the maximum temperature is produced ",
+        "d": "None"
+      },
+      "explanations":{ 
+        "a":"You are right",
+        "b":"Your are Wrong, Option \"a\" is correct answer",
+        "c":"Your are Wrong, Option \"a\" is correct answer",
+        "d":"Your are Wrong, Option \"a\" is correct answer"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+{
+      "question": "What is the colour of the oxygen cylinder in the Oxyacetylene assembly?",
+      "answers": {
+        "a": "Green",
+        "b": "Black",
+        "c": "Red",
+        "d": "White"
+      },
+      "explanations":{ 
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A carburizing flame is suitable for welding",
+      "answers": {
+        "a": "Mild steel",
+        "b": "high carbon steel",
+        "c": "stainless steel",
+        "d": "Cast iron"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The hottest part of the oxyacetylene flame is located in the",
+      "answers": {
+        "a": "Outer cone",
+        "b": "Inner cone",
+        "c": "Mixing zone",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "An oxidizing flame is suitable for welding",
+      "answers": {
+        "a": "Low carbon steel",
+        "b": "high carbon steel",
+        "c": "Aluminium",
+        "d": "Copper"
+      },
+      "explanations": {
+        "a":"Your are Wrong, Option \"b\" is correct answer",
+        "b":"You are right",
+        "c":"Your are Wrong, Option \"b\" is correct answer",
+        "d":"Your are Wrong, Option \"b\" is correct answer"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+]
+}
