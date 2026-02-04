@@ -86,8 +86,8 @@ stldr.load(tr, function ( trn ) {
 let wbv = new THREE.Shape();
 wbv.moveTo( 0,0 );
 wbv.lineTo( ((sizs.wd / sizs.ht)*0.5).toFixed(4), 0 );
-wbv.lineTo( ((sizs.wd / sizs.ht)*0.5).toFixed(4), ((sizs.wd / sizs.ht)*1.1).toFixed(4) );
-wbv.lineTo( -((sizs.wd / sizs.ht)*0.5).toFixed(4), ((sizs.wd / sizs.ht)*1.1).toFixed(4) );
+wbv.lineTo( ((sizs.wd / sizs.ht)*0.5).toFixed(4), ((sizs.wd / sizs.ht)*1.3).toFixed(4) );
+wbv.lineTo( -((sizs.wd / sizs.ht)*0.5).toFixed(4), ((sizs.wd / sizs.ht)*1.3).toFixed(4) );
 wbv.lineTo( -((sizs.wd / sizs.ht)*0.5).toFixed(4), 0 );
 wbv.lineTo( 0, 0 );
 wbv.closed=true;
@@ -160,14 +160,14 @@ const bsmtlbl = setInterval(() => {
     const lbar=crtar(mldme,"Base Material");
     bslbl=lbar[0];
     if (lbar[0] &&  lbar[1]) {
-        const upOffset = new THREE.Vector3(-1.0, (sizs.wd / sizs.ht) * 0.25, 1.55);
+        const upOffset = new THREE.Vector3(-(sizs.wd / sizs.ht) * 0.32, (sizs.wd / sizs.ht) * 0.25, (sizs.wd / sizs.ht) * 0.45);
         const labelPos = mldme.position.clone().add(upOffset);
         lbar[0].position.copy(labelPos);
         const dir = new THREE.Vector3().subVectors(mldme.position, labelPos).normalize();
         const length = labelPos.distanceTo(mldme.position);
         lbar[1].position.copy(labelPos);
         //lbar[1].setDirection(dir);
-        lbar[1].setLength(length*0.35, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+        lbar[1].setLength(length*(sizs.wd / sizs.ht) * 0.25, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
     }
 }, 100);
 
@@ -183,7 +183,7 @@ const eclbl = setInterval(() => {
     ecblsprt=lbar[0];
     ecblarw=lbar[1];
     if (lbar[0] &&  lbar[1]) {
-        let upOffset = new THREE.Vector3(-0.1, (sizs.wd / sizs.ht) * 0.12, 1.98);
+        let upOffset = new THREE.Vector3(-(sizs.wd / sizs.ht) * 0.05, (sizs.wd / sizs.ht) * 0.12, (sizs.wd / sizs.ht) * 0.92);
         ecblof=upOffset;
         let labelPos = trnme.position.clone().add(upOffset);
         lbar[0].position.copy(labelPos);
@@ -191,7 +191,7 @@ const eclbl = setInterval(() => {
         let length = labelPos.distanceTo(trnme.position);
         lbar[1].position.copy(labelPos);
         //lbar[1].setDirection(dir);
-        lbar[1].setLength(length*0.18, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+        lbar[1].setLength(length*(sizs.wd / sizs.ht) * 0.085, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
     }}
 }, 10);
 
@@ -208,7 +208,7 @@ const flbl = setInterval(() => {
     flsprt=lbar[0];
     flarw=lbar[1];
     if (lbar[0] &&  lbar[1]) {
-        let upOffset = new THREE.Vector3(0.5, (sizs.wd / sizs.ht) * -0.45, 1.98);
+        let upOffset = new THREE.Vector3((sizs.wd / sizs.ht) * 0.25, (sizs.wd / sizs.ht) * -0.45, (sizs.wd / sizs.ht) * 0.92);
         flof=upOffset;
         let labelPos = trnme.position.clone().add(upOffset);
         lbar[0].position.copy(labelPos);
@@ -216,7 +216,7 @@ const flbl = setInterval(() => {
         let length = labelPos.distanceTo(trnme.position);
         lbar[1].position.copy(labelPos);
         lbar[1].setDirection(dir);
-        lbar[1].setLength(length*0.25, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
+        lbar[1].setLength(length*(sizs.wd / sizs.ht) * 0.15, (sizs.wd / sizs.ht) * 0.03, (sizs.wd / sizs.ht) * 0.02);
     }}
 }, 10);
 
@@ -235,14 +235,16 @@ adldr.load('./images/Wldsd.mp3', (buffer) => {
     aud.setBuffer(buffer);
 });
 
-
-const adit = () => {
-            aud.playbackRate = 2.0;
-                aud.play();
-                setTimeout(() => {
+const adit = (x) => {
+            aud.playbackRate = 2.5;
+            if(x==1){
+                aud.play();}
+                else if(x==0){
                     aud.stop();
-                }, 100);
+                }
         };
+
+
 function lblupd(objprt,sprt,arw,upof){
     if (!objprt || !sprt || !arw) return;
         const lblps = objprt.position.clone().add(upof);
@@ -254,12 +256,18 @@ function lblupd(objprt,sprt,arw,upof){
 let i=0,j=0, k=sizs.wd / sizs.ht*0.0011, m=sizs.wd / sizs.ht*0.0019, adi=0;
 
 const loop = () => {
-    console.clear();
+       if(i==0){
+    setTimeout(function() {window.requestAnimationFrame(loop);},50);
+    
+    }
+    else  if(i<= ((sizs.wd / sizs.ht)*0.7260451))  {
+      adit(1);  
+      window.requestAnimationFrame(loop);             
+        
+    }
     rndr.render(scn,cam);
-    window.requestAnimationFrame(loop);
     
     if(i<= ((sizs.wd / sizs.ht)*0.725)){
-        adit();
      trnme.position.set(-sizs.wd / sizs.ht*0.04, sizs.wd / sizs.ht*0.545, sizs.wd / sizs.ht*0.05-m);
         lblupd(trnme,ecblsprt,ecblarw,ecblof);
         lblupd(trnme,flsprt,flarw,flof);
@@ -277,6 +285,8 @@ const loop = () => {
     rndr.render(scn,cam);
     }
     else{
+        adit(0);
+        rndr.render(scn,cam);
         if (adi==0){
             adi=1;
         scn.remove(ecblsprt);
