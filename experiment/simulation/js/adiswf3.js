@@ -60,7 +60,7 @@ stldr.load( './images/act.stl', function ( act ) {
 
 }, undefined, function ( error ) {
 
-	console.error( error );
+	//console.error( error );
 
 } );
 stldr.load( './images/oxy.stl', function ( oxy ) {
@@ -75,7 +75,7 @@ stldr.load( './images/oxy.stl', function ( oxy ) {
 
 }, undefined, function ( error ) {
 
-	console.error( error );
+	//console.error( error );
 
 } );
 let ml='./images/bras.stl';
@@ -91,7 +91,7 @@ stldr.load(ml, function ( mld ) {
 
 }, undefined, function ( error ) {
 
-	console.error( error );
+	//console.error( error );
 
 } );
 
@@ -108,7 +108,7 @@ stldr.load(tr, function ( trn ) {
 
 }, undefined, function ( error ) {
 
-	console.error( error );
+	//console.error( error );
 
 } );
 
@@ -186,13 +186,15 @@ adldr.load('./images/Wldsd.mp3', (buffer) => {
 });
 
 
-const adit = () => {
-            aud.playbackRate = 2.0;
-                aud.play();
-                setTimeout(() => {
+const adit = (x) => {
+            aud.playbackRate = 2.5;
+            if(x==1){
+                aud.play();}
+                else if(x==0){
                     aud.stop();
-                }, 100);
+                }
         };
+
 function lblupd(objprt,sprt,arw,upof){
     if (!objprt || !sprt || !arw) return;
         const lblps = objprt.position.clone().add(upof);
@@ -342,8 +344,19 @@ let i=0,j=0, adi=0, k=sizs.wd / sizs.ht*0.0011, m=sizs.wd / sizs.ht*0.0019;
 
 const loop = () => {
 
+    if(i==0){
+      scn.add(actme);     
+    setTimeout(function() {window.requestAnimationFrame(loop);},50);
+    
+    }
+    else  if(i<= ((sizs.wd / sizs.ht)*0.5252555))  {
+      scn.add(actme);
+      adit(1);  
+      window.requestAnimationFrame(loop);             
+        
+    }
     rndr.render(scn,cam);
-    window.requestAnimationFrame(loop);
+      if(actme || oxyme || trnme ) { 
     
     if(i<= ((sizs.wd / sizs.ht)*0.525)){
     trnme.position.set(-sizs.wd / sizs.ht*0.60+k, sizs.wd / sizs.ht*0.48, -sizs.wd / sizs.ht*0.49-m);
@@ -394,8 +407,10 @@ rndr.render(scn,cam);
     rndr.render(scn,cam);
     }
     else {
+        adit(0);
         if (adi==0){
         scn.remove(mldme);
+        scn.remove(fill);
         scn.remove(trnme);
         scn.remove(wrv);
         ml='./images/bwb.stl';
@@ -435,6 +450,7 @@ console.clear();
 adi=adi+1;
 }
     }
+      }
 }
 loop();
 }
