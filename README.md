@@ -4,7 +4,7 @@
 <b>Discipline | <b> Mechanical Engineerig
 :--|:--|
 <b> Lab | <b> Welding Lab
-<b> Experiment|     <b> Principles of Gas Welding and Gas Cutting Processes and Experiment 3
+<b> Experiment|     <b> Principles of Gas Welding and Gas Cutting Processes and Experiment 5
 
 ### About the Experiment 
 
